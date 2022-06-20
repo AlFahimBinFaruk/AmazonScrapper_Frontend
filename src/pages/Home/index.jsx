@@ -7,8 +7,9 @@ const Home = () => {
     price: true,
     img: true,
     url: true,
-    reviews: true,
+    stars: true,
     ratings: true,
+    overview:true,
   });
   return (
     <div className="home vh-100 d-flex justify-content-center align-items-center">
