@@ -3,13 +3,8 @@ import axios from "axios";
 const API_URL = `${process.env.REACT_APP_API_URL}/api/scrapt/`;
 //getScraptedData
 const getScraptedData = async (body) => {
-  const config = {
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-    },
-  };
   //get all data
-  const response = await axios.post(API_URL, body, config);
+  const response = await axios.post(API_URL, body);
   //return response
   return response.data;
 };
