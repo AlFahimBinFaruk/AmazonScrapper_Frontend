@@ -5,7 +5,7 @@ const API_URL = `${process.env.REACT_APP_API_URL}/api/scrapt/`;
 const getScraptedData = async (body) => {
   const config = {
     headers: {
-      "Access-Control-Allow-Origin": "https://amazon-scrapper.netlify.app",
+      "Access-Control-Allow-Origin": "*",
     },
   };
   //get all data
