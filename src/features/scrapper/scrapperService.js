@@ -3,8 +3,13 @@ import axios from "axios";
 const API_URL = `${process.env.REACT_APP_API_URL}/api/scrapt/`;
 //getScraptedData
 const getScraptedData = async (body) => {
+  const config = {
+    headers: {
+      "Access-Control-Allow-Origin": "https://amazon-scrapper.netlify.app",
+    },
+  };
   //get all data
-  const response = await axios.post(API_URL, body);
+  const response = await axios.post(API_URL, body, config);
   //return response
   return response.data;
 };
